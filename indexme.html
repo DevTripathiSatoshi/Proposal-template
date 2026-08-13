@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Brownie</title>
+    <link rel="stylesheet" href="styleLanding.css" />
+</head>
+<body>
+    <div class="watermark">32 August, 2026</div>
+    <audio id="bgMusicPiano" src="piano_music.mp3" loop></audio>
+    <audio id="bgMusicVocal" src="vocal_music.mp3" loop></audio>
+    
+    <div class="wrapper" id="datePhase">
+        <h1 class="question" style="font-size: 2.5em; margin-bottom: 10px;">Hi, brownieee ❤️</h1>
+        <h1 class="question" style="font-size: 1.5em;">When are you going to say "I love you" back?</h1>
+        <div class="center" style="flex-direction: column; gap: 20px;">
+            <select id="dateSelect" class="date-dropdown">
+                <!-- Populated by JS -->
+            </select>
+            <button id="start_button">Confirm Date ❤️</button>
+        </div>
+    </div>
+
+    <!-- Phase 2: Carousel (Hidden initially) -->
+    <div class="wrapper hidden" id="carouselPhase">
+        <img class="photo" id="carouselImg" alt="Brownie" src="photo1.jpg" />
+        <h1 class="question" id="carouselQ">Who is this cutie?</h1>
+        <div class="center">
+            <button id="nextPhotoBtn">me ❤️</button>
+        </div>
+    </div>
+
+    <!-- Phase 2.5: Collage (Hidden initially) -->
+    <div class="wrapper hidden" id="collagePhase" style="max-width: 800px;">
+        <h1 class="question">Every photo which has you is my fav</h1>
+        <div class="collage-grid" id="collageGrid">
+            <!-- Images injected via JS -->
+        </div>
+        <div class="center" style="margin-top: 30px;">
+            <button id="toProposalBtn">Aww ❤️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
